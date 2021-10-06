@@ -1,0 +1,32 @@
+# Place Index
+GET http://localhost:3000/places
+###
+# Place Create
+POST http://localhost:3000/places
+Content-Type: application/json
+
+{
+  "name": "Shakes",
+  "address": "123 Freeway Dr. Orlando, FL 33218"
+}
+
+###
+#Place Show
+GET http://localhost:3000/places/3
+###
+
+#Place Update
+PATCH  http://localhost:3000/places/2
+Content-Type: application/json
+
+{
+  "name": "Fry Shop",
+  "address": "333 Fry Way Miami, FL 33333"
+
+}
+###
+
+#Place Delete
+DELETE http://localhost:3000/places/2
+Content-Type: application/json
+
